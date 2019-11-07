@@ -110,10 +110,14 @@ h3 {
     &__name {
         font-family: "Open Sans", serif;
         font-size: 18px;
+        margin-bottom: 43px;
+        margin-left: 4px;
+        margin-top: 1px;
     }
     &__name_top {
         margin-top: 16px;
         margin-left: 0; 
+        margin-bottom: 19px;
     }
     &__title {
         letter-spacing: 1.8px;
@@ -125,6 +129,8 @@ h3 {
             color: $accent-color;
             font-size: 18px;
             letter-spacing: 0.9px;
+            margin-top: 23px; 
+            
         }
     }
     &__btn {
@@ -154,16 +160,43 @@ h3 {
     justify-content: space-between;
     &-demo {
         display: block;
+        position: relative;
         flex-basis: 500px;
         width: 447px;
         height: 643px;
         background-image: url(../img/svg/book.svg);
         background-repeat: no-repeat;
+        &__title {
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            position: absolute;
+            left: 131px;
+            top: 118px; 
+            span {
+                font-size: 14px;
+                font-family: "Open Sans", serif;
+                color: $accent-color;
+                display: block;
+                text-transform: initial;
+                margin-top: 10px;
+            }
+        }
+        &__author {
+            font-size: 14px;
+            font-family: "Open Sans", serif;
+            color: $accent-color;
+            position: absolute;
+            bottom: 52px;
+            left: 88px;
+            letter-spacing: 0.5px;
+        }
     }
 }
 .block_author {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .block-ava {
@@ -209,6 +242,10 @@ h3 {
     }
     &-text {
         flex-basis: 41%;
+        &__descr {
+            font-family: "Open Sans", serif;
+            letter-spacing: 0.6px;
+        }
     }
     &-table {
         flex-basis: 49%;
@@ -236,12 +273,49 @@ h3 {
                     font-size: 15px;
                     line-height: 22px;
                     top: 1px;
-                    background-color: $accent-color;
+                    background-color: #5fc9b6;
                     color: $light-color;
                     padding: 0 7px;
 
-                }
+                 }
             }
+        }
+        &__btn {
+            background-color: $accent-color;
+            border: none;
+            color: $light-color;
+            text-decoration: none;
+            border-radius: 3px;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 28px;
+            padding: 14px 45px;
+            letter-spacing: 0.7px;
+            margin-bottom: 19px;
+        }
+    }
+    &-social {
+        display: flex;
+        align-items: center;
+        margin-top: 14px;
+        &__title {
+            font-family: "Roboto Slab", serif;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.9px;
+        }
+        &__list {
+            list-style-type: none;  
+            padding-left: 23px;
+            &>li {
+                display: inline-block;
+                font-size: 18px;
+                vertical-align: middle;
+                margin-right: 12px;
+                &>a {
+                    color: $accent-color;
+                }
+            }  
         }
     }
 
