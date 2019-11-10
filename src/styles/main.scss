@@ -56,6 +56,31 @@ h3 {
         font-size: 18px;
         letter-spacing: 0.9px;
     }
+    &__btn {
+        background-color: linear-gradient(to top left#64e39a, #73e6b9);
+        border: none;
+        text-decoration: none;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 28px;
+        padding: 14px 45px;
+        letter-spacing: 0.7em;
+        position: relative;
+        
+        &::before {
+            content: "";
+            display: block;
+            height: 20px;
+            width: 100px;
+            background-color: #b2f2be;
+            position: absolute;
+            z-index: -1;
+            bottom: -2px;
+            border-radius: 3px;
+
+        }
+    }
 }
 
 
@@ -98,8 +123,11 @@ h3 {
     }
 }
 
-.block-text {
-    flex-basis: calc(100% - 500px);
+.block_text {
+    flex-basis: calc(93% - 500px);
+    &--width {
+        flex-basis: calc(93% - 520px);
+    }
     small {
         font-size: 12px;
         line-height: 22px;
@@ -130,9 +158,41 @@ h3 {
             font-size: 18px;
             letter-spacing: 0.9px;
             margin-top: 23px; 
-            
         }
     }
+    &-item {
+        margin-bottom: 55px;
+        &__date {
+           font-size: 15px;  
+           font-family: "Open Sans", serif;
+           letter-spacing: 0.8px;
+           margin-bottom: 4px;
+        }
+        &__title {
+            font-size: 18px;  
+            letter-spacing: 0.9px; 
+            margin-bottom: 16px;
+            letter-spacing: 0.5px;
+        }
+        &__desc {
+            font-size: 15px;
+            font-family: "Open Sans", serif; 
+        }
+        &__btn {
+            display: block;
+            background-color: $accent-color;
+            color: $light-color;
+            text-decoration: none;
+            max-width: 250px;
+            border-radius: 3px;
+            text-align: center;
+            margin-top: 24px;
+            margin-bottom: 19px;
+            padding: 14px 0;
+            letter-spacing: 0.7px;
+        }
+    }
+
     &__btn {
         display: block;
         background-color: $accent-color;
@@ -196,9 +256,7 @@ h3 {
 .block_author {
     display: flex;
     justify-content: space-between;
-    
 }
-
 .block-ava {
     position: relative;
     &__svg {
@@ -206,9 +264,18 @@ h3 {
         z-index: -1;
         right: 0;
     }
+    &__svg--left {
+        right: inherit;
+        left: 0;
+    }
     &__img {
         margin-top: 47px;
         margin-right: 44px;
+    }
+    &__img--left {
+        margin-top: 40px;
+        margin-left: 51px;
+        margin-right: 0;
     }
 }
 .block-counter {
@@ -240,6 +307,7 @@ h3 {
     p {
         font-family: "Open Sans", serif; 
     }
+
     &-text {
         flex-basis: 41%;
         &__descr {
