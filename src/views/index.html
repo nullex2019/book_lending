@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>gulp-scss-starter</title>
+    <title>Emma Anderson</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport"
@@ -28,6 +28,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:100,400,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="../styles/main.css">
 
 </head>
@@ -164,6 +165,39 @@
 
     <div class="page">
         <div class="wrap">
+            <div class="block-carousel">
+                <div>
+                    <h3>Kate Dennings</h3>
+                    <p>Calligraphy Expert</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                        maecenas accumsan lacus vel facilisis. </p>
+                </div>
+
+                <div>
+                    <h3>Kate Dennings</h3>
+                    <p>Calligraphy Expert</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                        maecenas accumsan lacus vel facilisis. </p>
+                </div>
+
+                <div>
+                    <h3>Kate Dennings</h3>
+                    <p>Calligraphy Expert</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                        maecenas accumsan lacus vel facilisis. </p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page">
+        <div class="wrap">
             <div class="block_author">
                 <div class="block-ava">
                     <svg class="block-ava__svg block-ava__svg--left " width="435" height="704">
@@ -270,7 +304,7 @@
                     <a href="#" class="block-footer__logo"></a>
                     <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <hr>
+                    <hr>
                     <p>© 2019 Bukee Private Limited.</p>
                 </div>
 
@@ -311,8 +345,18 @@
         </div>
     </div>
 
-    <script src="../js/main.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/src/js/index.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.block-carousel').slick({
+                dots: true,
+                arrows: false
+            });
+        });
+    </script>
 </body>
 
 </html>

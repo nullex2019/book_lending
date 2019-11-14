@@ -1,1 +1,4 @@
-import "./import/modules";
+$(document).ready(function(){
+    $('.block-carousel').slick({
+    });
+  });
